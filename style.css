@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css2?family=Varela&display=swap);
+
+body {
+  font-family: "Varela", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./21.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.p {
+  height: 200px;
+  overflow: scroll;
+  scroll-margin-bottom: none;
+}
+
+.wrappr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.hiddin {
+  display: none;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.show-btn {
+  background-color: rgb(85, 89, 92);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+.show-btn:hover {
+  background-color: #c2262600;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  color: #000000;
+}
+
+.modal-title {
+  margin-bottom: 15px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
